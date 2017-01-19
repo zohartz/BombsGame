@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 import android.widget.ImageButton;
 
 /**
- * Created by Moore on 10/2/2015.
+ * Created by zohar .
  */
 public class Dgame {
 
