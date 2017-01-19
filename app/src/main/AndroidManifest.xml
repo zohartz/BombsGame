@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zohar.bombas" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bomb"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".MenuScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/help"
+            android:parentActivityName=".MenuScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Info"
+            android:label="@string/info"
+            android:parentActivityName=".MenuScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PlayScreen"
+            android:label="@string/play_screen"
+            android:parentActivityName=".Modes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FirstLevel"
+            android:label="@string/first_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SecondLevel"
+            android:label="@string/second_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ThirdLevel"
+            android:label="@string/third_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ForthLevel"
+            android:label="@string/forth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FifthLevel"
+            android:label="@string/fifth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SixthLevel"
+            android:label="@string/sixth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SeventhLevel"
+            android:label="@string/seventh_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EighthLevel"
+            android:label="@string/eighth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NinthLevel"
+            android:label="@string/ninth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TenthLevel"
+            android:label="@string/tenth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EleventhLevel"
+            android:label="@string/eleventh_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TwelfthLevel"
+            android:label="@string/twelfth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ThirteenthLevel"
+            android:label="@string/thirteenth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FourteenthLevel"
+            android:label="@string/fourteenth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FifteenthLevel"
+            android:label="@string/fifteenth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SixteenthLevel"
+            android:label="@string/sixteenth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SeventeenthLevel"
+            android:label="@string/seventeenth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EighteenthLevel"
+            android:label="@string/eighteenth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TwentiethLevel"
+            android:label="@string/twentieth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TwentyFirstLevel"
+            android:label="@string/twenty_first_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TwentySecondLevel"
+            android:label="@string/twenty_second_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NineteenthLevel"
+            android:label="@string/nineteenth_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TwentyThirdLevel"
+            android:label="@string/twenty_third_level"
+            android:parentActivityName=".PlayScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".YouLose"
+            android:label="@string/title_activity_you_lose"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".YouWin"
+            android:label="@string/title_activity_you_win"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Modes"
+            android:label="@string/title_activity_modes"
+            android:parentActivityName=".MenuScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HighScores"
+            android:label="@string/title_activity_high_scores"
+            android:parentActivityName=".MenuScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PlayScreen2"
+            android:label="@string/play_screen"
+            android:parentActivityName=".PlayScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen" />
+        </activity>
+        <activity
+            android:name=".TwentyFourthLevel"
+            android:label="@string/twenty_fourth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".TwentyFifthLevel"
+            android:label="@string/twenty_fifth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".TwentrySixthLevel"
+            android:label="@string/twenty_sixth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".TwentySeventhLevel"
+            android:label="@string/twenty_seventh_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".TwentyEighthLevel"
+            android:label="@string/twenty_eighth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".TwentyNinthLevel"
+            android:label="@string/twenty_ninth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".ThirtiethLevel"
+            android:label="@string/thirtieth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".ThirtyFirstLevel"
+            android:label="@string/thirty_first_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".ThirtySecondLevel"
+            android:label="@string/thirty_second_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".ThirtyThirdLevel"
+            android:label="@string/thirty_third_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".ThirtyFourthLevel"
+            android:label="@string/thirty_fourth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".ThirtyFifthLevel"
+            android:label="@string/thirty_fifth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".ThirtySixthLevel"
+            android:label="@string/thirty_sixth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".ThirtySeventhLevel"
+            android:label="@string/thirty_seventh_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".ThirtyEighthLevel"
+            android:label="@string/thirty_eighth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".ThirtyNinthLevel"
+            android:label="@string/thirty_ninth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".FourtiethLevel"
+            android:label="@string/fourtieth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".FourtyFirstLevel"
+            android:label="@string/fourty_first_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".FourtySecondLevel"
+            android:label="@string/fourty_second_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".FourtyThirdLevel"
+            android:label="@string/fourty_third_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".FourtyFourthLevel"
+            android:label="@string/fourty_fourth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".FourtyFifthLevel"
+            android:label="@string/fourty_fifth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+        <activity
+            android:name=".FourtySixthLevel"
+            android:label="@string/fourty_sixth_level"
+            android:parentActivityName=".PlayScreen2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zohar.bombas.PlayScreen2" />
+        </activity>
+
+    </application>
+
+</manifest>

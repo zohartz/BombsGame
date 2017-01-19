@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="moore.bombas.Help">
+
+
+    <item android:id="@+id/iw"
+        android:title="@string/language"
+        android:icon="@drawable/idioma2"
+        app:showAsAction="always"
+        android:onClick="changeIdioma"
+        />
+
+    <item android:id="@+id/es"
+        android:title="@string/language"
+        android:icon="@drawable/f_12"
+        app:showAsAction="always"
+        android:onClick="changeIdioma"
+        />
+
+    <item android:id="@+id/en"
+        android:title="@string/language"
+        android:icon="@drawable/f"
+        app:showAsAction="always"
+        android:onClick="changeIdioma"
+        />
+
+
+
+</menu>
