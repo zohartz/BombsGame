@@ -1,11 +1,17 @@
 package zohar.bombas;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 //delete
 //import com.google.android.gms.ads.AdListener;
 //import com.google.android.gms.ads.AdRequest;
@@ -15,19 +21,46 @@ import android.view.View;
 public class MenuScreen extends AppCompatActivity {
     //delete
    // InterstitialAd mInterstitialAd;
+   // private GameView gameView;
+  //  CountDownTimer gmt;
+    private ImageView bombimg;
+    private Animation anime;
+
+    private RelativeLayout allLayout;
+    MediaPlayer mdPlayer;
+
 
     Dgame temp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mdPlayer=MediaPlayer.create(MenuScreen.this,R.raw.tik_tok);
+        mdPlayer.setLooping(true);
+        mdPlayer.start();
+
         setContentView(R.layout.activity_menu_screen);
         Dgame.currLevel = 0;
+
+        bombimg=(ImageView)findViewById(R.id.bonbing_1);
+        anime = AnimationUtils.loadAnimation(this,R.anim.view_animation);
 
 
     }
 
-	
+    public void onWindowFocusChanged(boolean hasfocus){
+        super.onWindowFocusChanged(hasfocus);{
+            if(hasfocus){
+                bombimg.startAnimation(anime);
+            }
+        }
+    }
 
+    //for stoping sound
+    protected void onPause(){
+        super.onPause();
+        mdPlayer.release();
+        finish();
+    }
 	/*
 		////// this block is responsible for ads appearing in the screen
 		////// to make ads work, uncomment this block and the linking line in the gradle file	
@@ -57,9 +90,19 @@ public class MenuScreen extends AppCompatActivity {
     }
 
 	*/
-	
-	
-	
+
+   /* @Override
+    protected void onResume() {
+        super.onResume();
+        gameView.resume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        gameView.pause();
+    }
+	*/
     public void begin()
     {
         Intent intent = new Intent(this, Modes.class);
