@@ -9,6 +9,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+// Similarly to all level classes there's a timer that once the player finish the
+//level ,scores are calculated according to the time passed and stored in the shared preference
+
 public class FirstLevel extends AppCompatActivity{
 
     //int soundPlay;

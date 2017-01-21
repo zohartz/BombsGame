@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+// here we see all the levels blocked except the first one
+// levels are unblocked once the player finish its previous levels
 public class PlayScreen extends AppCompatActivity {
 
     //int soundPlay; sonido

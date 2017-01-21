@@ -7,6 +7,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+// LENTO means you take the slow and normal version of the game
+// Extreme means you choose the fast version of the game (I still need to fix some problem over there)
+// once the player choose mode i'll get to play screen.java
+
 public class Modes extends AppCompatActivity{
 
 

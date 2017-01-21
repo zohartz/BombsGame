@@ -12,12 +12,11 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-//delete
-//import com.google.android.gms.ads.AdListener;
-//import com.google.android.gms.ads.AdRequest;
-//import com.google.android.gms.ads.InterstitialAd;
 
-//the initial screen that seen when opening the app
+// this class is the initial screen that seen when opening the app HIGH SCORE button has
+// OnClock method that retrives the high score from shared Preference
+// play button redirect you to mode.java class
+
 public class MenuScreen extends AppCompatActivity {
     //delete
    // InterstitialAd mInterstitialAd;

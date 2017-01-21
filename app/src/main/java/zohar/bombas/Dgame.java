@@ -8,6 +8,8 @@ import android.widget.ImageButton;
 /**
  * Created by zohar .
  */
+// this is where the game happens ,all levels use this class
+    // here the sharesPreferance is initialized
 public class Dgame {
 
 public static final String TKT="TKT";
@@ -93,6 +95,7 @@ public static final String TKT="TKT";
         return sum;
     }
 
+    //choose where to put bombs and where circles randomly
     public static void mix(int pressed, Context context) {
         initVisited();
         ImageButton temp = null;
@@ -164,6 +167,7 @@ public static final String TKT="TKT";
 
 
     }
+    // chooses circles randomly (this function used by mix)
     public static ImageButton switchIt(int i, Context context) {
         ImageButton temp=null;
         switch (i) {
@@ -514,6 +518,8 @@ public static final String TKT="TKT";
             visited[i]=0;
         }
     }
+
+    // chooses bombs randomly (this function used by mix)
 
     public static int randomBall()
     {
@@ -1776,6 +1782,7 @@ public static final String TKT="TKT";
         return bomb;
     }
 
+    //choosing a level from the level screen
     public static int[] chooseX(int pressed)
     {
        int []exs=new int[pressed];
