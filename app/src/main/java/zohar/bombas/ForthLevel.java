@@ -1,6 +1,7 @@
 package zohar.bombas;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +20,8 @@ public class ForthLevel extends AppCompatActivity{
     long cincoMil=5000;
     long leftTime=0;
     //public static final String TKT="TKT";
+    MediaPlayer mdPlayer;
+
 
     double startTime=System.currentTimeMillis();
 
@@ -26,6 +29,9 @@ public class ForthLevel extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forth_level);
+        mdPlayer=MediaPlayer.create(ForthLevel.this,R.raw.tik_tok);
+        mdPlayer.setLooping(true);
+        mdPlayer.start();
         Dgame.gamePrefs= getSharedPreferences(Dgame.GAME_PREFS, 0);
         Dgame.currLevel=3;
         t=(TextView)findViewById(R.id.tv4);
@@ -193,6 +199,13 @@ public class ForthLevel extends AppCompatActivity{
     @Override
     public void onBackPressed() {
         reloj.cancel();
+        finish();
+    }
+
+    //for stoping sound
+    protected void onPause(){
+        super.onPause();
+        mdPlayer.release();
         finish();
     }
 }

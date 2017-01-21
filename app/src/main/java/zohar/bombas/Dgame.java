@@ -1435,6 +1435,9 @@ public static final String TKT="TKT";
         return pelota;
     }
 
+    //Chooses bombs randomly
+   // (This function is used by MIX)
+
     public static int randomBomb()
     {
         int bomba;

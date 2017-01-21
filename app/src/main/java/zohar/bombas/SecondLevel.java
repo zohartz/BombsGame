@@ -1,6 +1,7 @@
 package zohar.bombas;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,8 @@ public class SecondLevel extends AppCompatActivity{
     long leftTime=0;
     //public static final String TKT="TKT";
     Button nivel;
+    MediaPlayer mdPlayer;
+
 
     double startTime=System.currentTimeMillis();
 
@@ -28,6 +31,9 @@ public class SecondLevel extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_level);
+        mdPlayer= MediaPlayer.create(SecondLevel.this,R.raw.tik_tok);
+        mdPlayer.setLooping(true);
+        mdPlayer.start();
             Dgame.gamePrefs = getSharedPreferences(Dgame.GAME_PREFS, 0);
             Dgame.currLevel = 1;
             t = (TextView) findViewById(R.id.tv2);
@@ -201,6 +207,13 @@ public class SecondLevel extends AppCompatActivity{
     public void onBackPressed()
     {
         reloj.cancel();
+        finish();
+    }
+
+    //for stoping sound
+    protected void onPause(){
+        super.onPause();
+        mdPlayer.release();
         finish();
     }
 }

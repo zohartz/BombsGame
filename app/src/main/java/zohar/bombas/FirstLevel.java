@@ -1,6 +1,7 @@
 package zohar.bombas;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +29,8 @@ public class FirstLevel extends AppCompatActivity{
 
     double startTime=System.currentTimeMillis();
     double endTime;
+    MediaPlayer mdPlayer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -37,7 +40,9 @@ public class FirstLevel extends AppCompatActivity{
         Dgame.gamePrefs= getSharedPreferences(Dgame.GAME_PREFS, 0);//8888888888888888888888
         //tiktok=new SoundPool(1, AudioManager.STREAM_MUSIC,0);
         //soundPlay=Dgame.tiktok.load(this, R.raw.tik_tok,1);
-
+        mdPlayer=MediaPlayer.create(FirstLevel.this,R.raw.tik_tok);
+        mdPlayer.setLooping(true);
+        mdPlayer.start();
 
 
         t=(TextView)findViewById(R.id.tv1);
@@ -176,7 +181,7 @@ public class FirstLevel extends AppCompatActivity{
             overridePendingTransition(R.anim.push_left_in, R.anim.push_left_in);
         }
         else {
-
+            // here i have a problem with memory
             this.setVisible(false);
             Intent intent=new Intent(this, SecondLevel.class);
             startActivity(intent);
@@ -241,6 +246,13 @@ public class FirstLevel extends AppCompatActivity{
     public void onBackPressed()
     {
         reloj.cancel();
+        finish();
+    }
+
+    //for stoping sound
+    protected void onPause(){
+        super.onPause();
+        mdPlayer.release();
         finish();
     }
 }

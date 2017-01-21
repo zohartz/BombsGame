@@ -33,7 +33,7 @@ public class MenuScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mdPlayer=MediaPlayer.create(MenuScreen.this,R.raw.tik_tok);
+        mdPlayer=MediaPlayer.create(MenuScreen.this,R.raw.bensound);
         mdPlayer.setLooping(true);
         mdPlayer.start();
 
