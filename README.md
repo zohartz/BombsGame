@@ -17,6 +17,8 @@ link to google doc
 
 https://docs.google.com/document/d/1IJO5vGccpYaC3H58K8TOHOsxa3IZkg2O0PrUEW87-3A/edit
 
+screenshot:
+
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/15306980/22186231/07c5d354-e0fb-11e6-8700-d0756a5f9ac5.png"  width="200"/>
   <img src= "https://cloud.githubusercontent.com/assets/15306980/22186289/0cc0a72a-e0fc-11e6-96cc-cbf02b226958.png" width ="200"/>
