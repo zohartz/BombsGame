@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.firebase.crash.FirebaseCrash;
+
 // Similarly to all level classes there's a timer that once the player finish the
 //level ,scores are calculated according to the time passed and stored in the shared preference
 
@@ -187,6 +189,7 @@ public class FirstLevel extends AppCompatActivity{
             startActivity(intent);
             Dgame.setHighScoreX(1);
             overridePendingTransition(R.anim.push_left_in, R.anim.push_left_in);
+            FirebaseCrash.log("get message with FirebaseCrash");
         }
 
 
